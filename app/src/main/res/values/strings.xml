@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Proyecto_Final</string>
+<<<<<<< HEAD
     <string name="title_activity_maps">Map</string>
+=======
+    <string name="tvcomunidad">Comunidad y municipio</string>
+    <string name="tvNombre">Nombre del productor</string>
+    <string name="tvActividad">Nombre de la actividad</string>
+    <string name="tvvisita">Objetivo de la visita</string>
+    <string name="tvtemas">Temas abordados</string>
+    <string name="tvresumen">Breve resumen de la actividad</string>
+    <string name="btregistro">Registrar</string>
+    <string name="btbuscar">Buscar registro</string>
+    <string name="btmodificar">Modificar</string>
+    <string name="bteliminar">Eliminar</string>
+>>>>>>> 78801d4 (Agregue los string para los editext y los botones)
 </resources>
