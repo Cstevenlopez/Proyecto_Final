@@ -40,7 +40,7 @@ class MyLoginScreen  : AppCompatActivity() {
         email = emailEditText.text.toString()
         password = passwordEditText.text.toString()
         //Verificamos que los campos no este vacios
-        if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
+        if (!TextUtils.isEmpty(email) && !TextUtils.gisEmpty(password)) {
 
             //Mostramos el progressdialog
             mProgressBar.setMessage("Registering User...")
