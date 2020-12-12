@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "318898047475",
+    "project_id": "login-firebase-cdb0d",
+    "storage_bucket": "login-firebase-cdb0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318898047475:android:77fe2a87fc828be9afea86",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318898047475-bn25e14cmqcvml2p5v2vafj76vu701f5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACL9AESILQ8Lcuwnvfh1XEw8QMrvEFQWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318898047475-bn25e14cmqcvml2p5v2vafj76vu701f5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318898047475:android:52f42e3a0bc19d7eafea86",
+        "android_client_info": {
+          "package_name": "com.example.registrolibros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318898047475-bn25e14cmqcvml2p5v2vafj76vu701f5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACL9AESILQ8Lcuwnvfh1XEw8QMrvEFQWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318898047475-bn25e14cmqcvml2p5v2vafj76vu701f5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
