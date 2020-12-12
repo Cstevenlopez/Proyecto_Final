@@ -12,4 +12,9 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    fun  LanzarBitacora(view: View) {
+        val intent = Intent(this,Bitacora_de_registro ::class.java)
+        startActivity(intent)
+    }
 }
