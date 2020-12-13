@@ -17,4 +17,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,Bitacora_de_registro ::class.java)
         startActivity(intent)
     }
+    fun  LanzarUbicarme(view: View) {
+        val intent = Intent(this,MapsActivity ::class.java)
+        startActivity(intent)
+    }
+
 }

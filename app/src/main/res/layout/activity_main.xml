@@ -30,10 +30,11 @@
         android:onClick="LanzarBitacora"/>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/ubicarme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Ubicarme"
+        android:onClick="LanzarUbicarme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
