@@ -1,6 +1,7 @@
 package Data
 
-import com.example.proyecto_final.Bitacora_de_registro
+import android.app.Person
+
 
 class Tables {
     abstract  class Registrar
@@ -16,7 +17,7 @@ class Tables {
             val COLUMN_RESUMEN = "resumen"
             val TABLE_NAME = "DBRegis"
             val COLUM_TYPE = "type"
-            var registros: MutableList<Registrar> = ArrayList()
+            var person: MutableList<Person> = ArrayList()
         }
     }
 }

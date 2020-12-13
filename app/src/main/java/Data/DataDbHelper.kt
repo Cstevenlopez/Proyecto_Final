@@ -1,10 +1,10 @@
 package Data
 
+import android.app.Person
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.proyecto_final.Bitacora_de_registro
 
 class DataDbHelper (context: Context):SQLiteOpenHelper(context, DATABASE_NAME, null,
 DATABASE_VERSION) {
@@ -34,9 +34,9 @@ DATABASE_VERSION) {
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int)
     {
-        fun insert (registro: List<>)
-        {
-            values.put(Tables.Registrar.COLUMN_COMUNIDAD,registro[0].getComunidad())
-        }
+     fun insert (registrar: List<Person>)
+     {
+
+     }
     }
 }
