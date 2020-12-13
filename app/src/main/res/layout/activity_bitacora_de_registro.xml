@@ -48,7 +48,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="4dp"
         android:hint="@string/tvActividad"
-        android:textColor="#1B0303"
+        android:textColor="#F3ECEC"
         android:textColorHint="#F3ECEC"
         app:layout_constraintBottom_toTopOf="@+id/tvVisita"
         app:layout_constraintEnd_toEndOf="parent"

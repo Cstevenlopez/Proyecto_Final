@@ -11,7 +11,6 @@ class Tables {
             val COLUM_NAME = "name"
             val COLUM_TYPE = "type"
             var registrar: MutableList<Registrar> = ArrayList()
-
         }
     }
 }
