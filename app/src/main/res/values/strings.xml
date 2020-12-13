@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Proyecto_Final</string>
     <string name="title_activity_maps">Map</string>
+<<<<<<< HEAD
+=======
+
+>>>>>>> a95ee0b (Termine la creacion del mapa)
     <string name="tvcomunidad">Comunidad y municipio</string>
     <string name="tvNombre">Nombre del productor</string>
     <string name="tvActividad">Nombre de la actividad</string>
