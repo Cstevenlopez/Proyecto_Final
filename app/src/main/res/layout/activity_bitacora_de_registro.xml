@@ -61,8 +61,8 @@
         android:layout_height="45dp"
         android:layout_marginBottom="4dp"
         android:hint="@string/tvcomunidad"
-        android:textColor="#F6F2F2"
-        android:textColorHint="#F6F1F1"
+        android:textColorHint="#F6F0F0"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/tvProductor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -103,8 +103,8 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="113dp"
-        android:layout_height="120dp"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
         app:layout_constraintBottom_toTopOf="@+id/tvMunicipio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
