@@ -14,7 +14,6 @@ class MainActivity2 : AppCompatActivity() {
     var lista: RecyclerView? = null
     var adaptador: AdaptadorCustom? = null
     var layoutManager: RecyclerView.LayoutManager? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
