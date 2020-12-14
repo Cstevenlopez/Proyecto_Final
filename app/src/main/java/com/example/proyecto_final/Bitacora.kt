@@ -10,13 +10,5 @@ class Bitacora : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bitacora)
     }
-    idguardar.setOnc
-    lickListener{
-     db.collection("users").document(email).set(
-         hashMapOf("provider" to provider,
-         "comunidad"to comunidadtextView.text.toString(),
-         "nombrep"to NombreptextView.text.toString(),
-             "nombrea"to nombreatextView.text.toString()),
-     )
-    }
+
 }
