@@ -67,6 +67,8 @@ class   MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMark
             )
             return
         }
+        val favoritePlace = LatLng(13.7363793,-84.8998781)
+        map.addMarker(MarkerOptions().position(favoritePlace).title("Mi playa favorita!"))
 
 
 
