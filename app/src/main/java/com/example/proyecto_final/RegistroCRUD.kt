@@ -75,7 +75,13 @@ class RegistroCRUD (context: Context) {
         var item: Registro? = null
 
         val db: SQLiteDatabase = helper?.readableDatabase!!
-        val columnas = arrayOf(RegistroContrac.Companion.Entrada.COLUMNA_ID, RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD, RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE, RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD, RegistroContrac.Companion.Entrada.COLUMNA_TEMA, RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO, RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)
+        val columnas = arrayOf(RegistroContrac.Companion.Entrada.COLUMNA_ID,
+                                RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD,
+                                RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE,
+                                RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD,
+                                RegistroContrac.Companion.Entrada.COLUMNA_TEMA,
+                                RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO,
+                                RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)
 
         val c: Cursor = db.query(
                 RegistroContrac.Companion.Entrada.NOMBRE_TABLA,
@@ -89,13 +95,34 @@ class RegistroCRUD (context: Context) {
         while (c.moveToNext()) {
             item = Registro(c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_ID)),
                             c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD)),
-                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE)),
-                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD)),
-                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_TEMA)),
-                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO)),
-                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)))
+                            c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE)),
+                            c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD)),
+                            c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_TEMA)),
+                            c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO)),
+                            c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)))
         }
         c.close()
         return item!!;
+    }
+    fun updateRegistro(item:Registro)
+    {
+        val db:SQLiteDatabase = helper?.writableDatabase!!
+        val values  = ContentValues()
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_ID, item.Id)
+        values.put(RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD, item.Comunidad)
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE, item.Nombre)
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD, item.Actividad)
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_TEMA, item.Tema)
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO, item.Objetivo)
+        values.put(RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN,item.Resumen)
+
+        db.update(
+                RegistroContrac.Companion.Entrada.NOMBRE_TABLA,
+                values,
+                "Id = ?",
+                arrayOf(item.Id))
+
+        db.close()
+
     }
 }
