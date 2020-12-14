@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
+class   MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
@@ -54,7 +54,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         setUpMap()
 
     }
-
     private fun setUpMap() {
         if (ActivityCompat.checkSelfPermission(
                 this,
