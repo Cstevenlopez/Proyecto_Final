@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun  LanzarBitacora(view: View) {
-        val intent = Intent(this,Bitacora_de_registro ::class.java)
+    fun  LanzarBi(view: View) {
+        val intent = Intent(this,Bitacora::class.java)
         startActivity(intent)
     }
     fun  LanzarUbicarme(view: View) {
