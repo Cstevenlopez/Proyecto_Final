@@ -2,6 +2,7 @@ package com.example.proyecto_final
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
@@ -29,8 +30,45 @@ class RegistroCRUD (context: Context)
 
         //Insertar una nueva fila en la tabla
         //Llamar a la funcion insertar y el nombre de la tabla donde se insertaran los datos
-        val newRowID = db.insert(RegistroContrac.Companion.Entrada.NOMBRE_TABLA, null, values)
+        val newRowId = db.insert(RegistroContrac.Companion.Entrada.NOMBRE_TABLA, null, values)
+        db.close()
+    }
+    fun getRegistros(): ArrayList<Registro>
+    {
+        val items:ArrayList<Registro> = ArrayList()
+
+        //Abrir base de datos en modo lectura
+        val db: SQLiteDatabase = helper?.readableDatabase!!
+
+
+        // Especificar las columnas que se van a consultar
+        val columnas = arrayOf(RegistroContrac.Companion.Entrada.COLUMNA_ID,RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD, RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE, RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD, RegistroContrac.Companion.Entrada.COLUMNA_TEMA, RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO, RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)
+
+        //Crear un cursor para recorrer la tabla
+
+        val c:Cursor = db.query(
+                RegistroContrac.Companion.Entrada.NOMBRE_TABLA,
+                columnas,
+                null,
+                null,
+                null,
+                null,
+                null
+        )
+        while (c.moveToNext()){
+            items.add(Registro(
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_ID)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COMLUMNA_COMUNIDAD)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_NOMBRE)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_ACTIVIDAD)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_TEMA)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_OBJETIVO)),
+                    c.getString(c.getColumnIndexOrThrow(RegistroContrac.Companion.Entrada.COLUMNA_RESUMEN)),
+            ))
+        }
+        //CerrarDB
         db.close()
 
+        return items
     }
 }
