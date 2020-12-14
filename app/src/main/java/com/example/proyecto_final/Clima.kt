@@ -16,7 +16,7 @@ import kotlin.math.log
 class Clima : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clima)
+        setContentView(R.layout.activity_main)
         if(Network.hayRed(this))
         {
             Toast.makeText(this, "Hay red", Toast.LENGTH_SHORT).show()
