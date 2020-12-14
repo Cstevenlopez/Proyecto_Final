@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/teal_700"
         android:ems="10"
@@ -69,9 +69,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="281dp"
-        android:layout_height="225dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="315dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
