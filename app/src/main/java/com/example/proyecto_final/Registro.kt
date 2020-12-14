@@ -1,6 +1,6 @@
 package com.example.proyecto_final
 
-class Registro {
+class Registro (Id:String, Comunidad:String, Nombre:String, Actividad:String, Tema:String,Objetivo:String,Resumen:String) {
     var Id:String? = null;
     var Comunidad:String? = null;
     var  Nombre:String? = null;
