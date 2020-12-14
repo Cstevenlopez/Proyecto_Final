@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="Models.Person"></activity>
+        <activity android:name=".MySplashScreen"></activity>
+        <activity android:name="Models.Person" />
         <activity android:name=".Persons" />
         <activity android:name=".Person" />
         <!--
@@ -39,4 +40,5 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
+
 </manifest>
