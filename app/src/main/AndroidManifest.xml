@@ -13,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+<<<<<<< HEAD
         <activity android:name=".Bitacora"></activity>
+=======
+        <activity android:name=".DetallesRegistro"></activity>
+        <activity android:name=".DetalleRegistro" />
+        <activity android:name=".VistaBitacora" />
+>>>>>>> 0764755 (Hice cambios)
         <activity
             android:name=".MySplashScreen"
             android:theme="@style/SplashTheme" />

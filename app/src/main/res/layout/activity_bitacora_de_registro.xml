@@ -18,22 +18,11 @@
         app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="42dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toEndOf="@+id/btRegistrar"
-        app:srcCompat="@android:drawable/ic_menu_save" />
-
     <Button
         android:id="@+id/btModificar"
         android:layout_width="282dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/btmodificar"
         app:layout_constraintBottom_toTopOf="@+id/tbEliminar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +33,7 @@
         android:id="@+id/imageView5"
         android:layout_width="42dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
@@ -52,26 +41,37 @@
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toEndOf="@+id/btModificar"
-        app:srcCompat="@android:drawable/stat_notify_sync" />
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="42dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toEndOf="@+id/tbEliminar"
         app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toEndOf="@+id/btRegistrar"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toEndOf="@+id/btModificar"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
 
     <Button
         android:id="@+id/btRegistrar"
@@ -172,8 +172,8 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="212dp"
-        android:layout_height="117dp"
+        android:layout_width="228dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toTopOf="@+id/tvComunidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

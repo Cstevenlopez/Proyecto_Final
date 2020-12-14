@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tvIdtem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#100101" />
+
+    <TextView
+        android:id="@+id/tvComunidadtem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#1C0404" />
+
+    <TextView
+        android:id="@+id/tvNombretemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00170202"
+        android:text="TextView"
+        android:textColor="#120202" />
+
+    <TextView
+        android:id="@+id/tvActividadtemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#1C0202" />
+
+    <TextView
+        android:id="@+id/tvTematemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#1B0202" />
+
+    <TextView
+        android:id="@+id/tvObjetivotemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#1E0303" />
+
+    <TextView
+        android:id="@+id/tvResumentemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#090101" />
 </LinearLayout>
